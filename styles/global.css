@@ -1,0 +1,24 @@
+@import url('./menu.css');
+@import url('./homepage.css');
+
+body{
+    background: linear-gradient(to bottom, #5D2E8C, #763C9A, #8E4DA9, #A65CB8);
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+}

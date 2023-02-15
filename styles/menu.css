@@ -1,0 +1,108 @@
+.position-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  input#menu {
+      display: none;
+      
+  }
+  .icon {
+      background: transparent;
+      cursor: pointer;
+      display: block;
+      height: 24px;
+      padding: 16px;
+      width: 32px;
+  }
+  
+  label.icon {
+      position: absolute;
+      z-index: 4;
+  }
+  
+  .icon .menu,
+  .icon .menu::before,
+  .icon .menu::after {
+      background: #ffffff;
+      content: '';
+      display: block;
+      height: 2px;
+      position: absolute;
+      transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+      width: 20px;
+  }
+  
+  .icon:hover .menu,
+  .icon:hover .menu::before,
+  .icon:hover .menu::after {
+      background: #FFC107;
+  }
+  
+  .icon .menu {
+      right: 0;
+      top: 27px;
+  }
+  
+  .icon .menu::before {
+      top: -6px;
+  }
+  
+  .icon .menu::after {
+      top: 6px;
+  }
+  
+  #menu:checked + .icon .menu {
+      background: transparent;
+  }
+  
+  #menu:checked + .icon .menu::before {
+      transform: rotate(45deg);
+  }
+  
+  #menu:checked + .icon .menu::after {
+      transform: rotate(-45deg);
+  }
+  
+  #menu:checked + .icon .menu::before,
+  #menu:checked + .icon .menu::after {
+      top: 0;
+      transition: top ease .3s, transform ease .3s .3s;
+  }
+  
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+      height: 100vh;
+      transition: width ease .6s;
+      width: 200px;
+      z-index: 2;
+      left: -200px;
+      position: absolute;
+      overflow: hidden;
+  }
+  
+  
+  #menu:checked ~ nav {
+      width: 100vw;
+      left: 0;
+  }
+  
+  .options {
+      height: 100vh;;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .options h1 {
+      font-family: 'Outfit', sans-serif;
+      min-width: 50px;
+      color: #fff;
+      vertical-align: text-bottom;
+      line-height: 60px;
+  }
+  
+  .options h1:hover {
+      cursor: pointer;
+      color: #FFC107;
+  }
