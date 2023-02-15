@@ -1,5 +1,6 @@
 @import url('./menu.css');
 @import url('./homepage.css');
+@import url('./ghPage.css');
 
 body{
     background: linear-gradient(to bottom, #5D2E8C, #763C9A, #8E4DA9, #A65CB8);
@@ -13,6 +14,7 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .montserrat {
@@ -21,4 +23,8 @@ body{
 
 .flex {
     display: flex;
+}
+
+.hide {
+  display: none;
 }

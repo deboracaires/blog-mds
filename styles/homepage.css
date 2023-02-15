@@ -38,15 +38,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    
+    color: #fff;    
 }
+
 .bigbox:hover {
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
     cursor: pointer;
     box-shadow: 10px 10px 5px #000;
-    z-index: 4;
 }
 
 .bigbox:active{
@@ -72,5 +69,5 @@
   }
 
 .virar-box {
-    transform: rotateY(180deg) scale(8.0);
+    transform: rotateY(180deg) scale(4.0);
 }
